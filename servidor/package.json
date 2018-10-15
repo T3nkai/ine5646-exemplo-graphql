@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "copia-cert": "rm -rf bin/cert && mkdir bin/cert && cp cert/*.pem bin/cert",
     "build": "babel src -d bin",
     "run": "node bin/index.js",
-    "start": "npm run build && npm run copia-cert && npm run run",
+    "start": "npm run build && npm run run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

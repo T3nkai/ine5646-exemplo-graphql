@@ -11,8 +11,8 @@ import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
 import schema  from './apollo'
 
 const opcoes = {
-  key: fs.readFileSync(path.join(__dirname, 'cert/key.pem')),
-  cert: fs.readFileSync(path.join(__dirname, 'cert/cert.pem'))
+  key: fs.readFileSync(path.join(__dirname, '../cert/key.pem')),
+  cert: fs.readFileSync(path.join(__dirname, '../cert/cert.pem'))
 }
 
 const app = express()
