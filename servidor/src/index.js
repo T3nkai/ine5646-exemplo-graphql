@@ -3,7 +3,6 @@ import fs from 'fs'
 import path from 'path'
 
 import express from 'express'
-import cors  from 'cors'
 
 import bodyParser from 'body-parser'
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
@@ -16,8 +15,6 @@ const opcoes = {
 }
 
 const app = express()
-
-app.use(cors())
 
 // The GraphQL endpoint
 app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }))
